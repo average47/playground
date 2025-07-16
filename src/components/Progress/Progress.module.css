@@ -1,16 +1,5 @@
-
 .circle {
   stroke-dashoffset: 0;
   transition: stroke-dashoffset 1s linear;
-  stroke: #666;
-  stroke-width: 1em;
+  stroke: #ffffff33;
 }
-.container {
-  display: block;
-  height: 200px;
-  width: 200px;
-  margin: 2em auto;
-  border-radius: 100%;
-  position: relative;
-}
-

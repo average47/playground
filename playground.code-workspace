@@ -1,7 +1,12 @@
 {
-    "folders": [
-        {
-            "path": "."
-        }
-    ]
+  "folders": [
+    {
+      "name": "app",
+      "path": "./src/app"
+    },
+    {
+      "name": "components",
+      "path": "./src/components"
+    }
+  ]
 }
