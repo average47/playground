@@ -1,8 +1,9 @@
-import { Carousel } from '@/components/';
+import { Carousel } from '@/components';
+
 export default function Home() {
   const data = {
     properties: {
-      animationSpeed: 300,
+      animation: 300,
       visibleSlides: 1,
     },
     children: [
