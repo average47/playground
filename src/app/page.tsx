@@ -3,7 +3,8 @@ import { Carousel } from '@/components';
 export default function Home() {
   const data = {
     properties: {
-      animation: 300,
+      autoPlay: true,
+      speed: 5000,
       visibleSlides: 1,
     },
     children: [

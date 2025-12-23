@@ -1,9 +1,10 @@
 'use client';
-import { useState, useEffect, useRef, JSX } from 'react';
+import { useState, useEffect, useRef, JSX, Fragment } from 'react';
 import Image from 'next/image';
 // import { CarouselProps } from './Carousel.types';
 import { Icon } from '../Icon';
 import './Carousel.css';
+import { dir } from 'console';
 
 const placeholderImages = [
   'https://images.unsplash.com/photo-1523815378073-a43ae3fbf36a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=776&q=80',
@@ -13,176 +14,140 @@ const placeholderImages = [
 ];
 
 export default function Carousel({ ...props }: any): JSX.Element {
-  // console.log('Carousel props:', props);
+  const { autoPlay, speed } = props.properties;
   const [index, setIndex] = useState(0);
   const carousel = useRef<HTMLDivElement>(null);
   const slider = useRef<HTMLUListElement>(null);
   const slides = useRef<Array<HTMLLIElement>>([]);
-
-  useEffect(() => {
-    // Initial slides position, so user can go from first to last slide (click to the left first)
-    slider.current!.prepend(slides.current[slides.current.length - 1]);
-  }, []);
-
-  // Creating dot for each slide
-  // const createDots = (carousel, initSlides) => {
-  //   const dotsContainer = document.createElement('div');
-  //   dotsContainer.classList.add('carousel_nav');
-
-  //   initSlides.forEach((slide, index) => {
-  //     const dot = document.createElement('button');
-  //     dot.type = 'button';
-  //     dot.classList.add('carousel_dot');
-  //     dot.setAttribute('aria-label', `Slide number ${index + 1}`);
-  //     slide.dataset.position = index;
-  //     slide.classList.contains('selected') &&
-  //       dot.classList.add('selected');
-  //     dotsContainer.appendChild(dot);
-  //   });
-
-  //   carousel.appendChild(dotsContainer);
-
-  //   return dotsContainer;
-  // };
-
-  // Updating relevant dot
-  // const updateDot = (slide) => {
-  //   const currDot = dotNav.querySelector('.selected');
-  //   const targetDot = slide.dataset.position;
-
-  //   currDot.classList.remove('selected');
-  //   dots[targetDot].classList.add('selected');
-  // };
-
-  // Handling arrow buttons
-  const handleClick = (direction: number): void => {
-    console.log('handleClick dir:', direction);
-
-    //     slides = [...slider.children];
-    //     const currSlide = slider.querySelector('.selected');
-    //     currSlide.classList.remove('selected');
-    //     let targetSlide;
-
-    //     if (arrow.classList.contains('jsPrev')) {
-    //       targetSlide = currSlide.previousElementSibling;
-    //       slider.prepend(slides[slides.length - 1]);
-    //     }
-
-    //     if (arrow.classList.contains('jsNext')) {
-    //       targetSlide = currSlide.nextElementSibling;
-    //       slider.append(slides[0]);
-    //     }
-
-    //     targetSlide.classList.add('selected');
-    //     updateDot(targetSlide);
+  const nextBtn = useRef<HTMLButtonElement>(null);
+  const prevBtn = useRef<HTMLButtonElement>(null);
+  const intervalId = useRef<NodeJS.Timeout | undefined>(undefined);
+  const controllerRef = useRef(new AbortController());
+  const pause = (ms: number): Promise<void> => {
+    return new Promise((resolve) => setTimeout(resolve, ms));
   };
 
-  // const buttons = carousel.querySelectorAll('.carousel_btn');
-  // buttons.forEach(handleClick);
+  useEffect(() => {
+    if (!carousel.current || !slider.current) return;
+    slider.current!.prepend(slides.current[slides.current.length - 1]);
+    if (autoPlay) {
+      startInterval(speed);
+      carousel.current!.addEventListener('mouseenter', () =>
+        clearInterval(intervalId.current)
+      );
+      carousel.current!.addEventListener('mouseleave', () =>
+        startInterval(speed)
+      );
+    }
+    return () => {
+      if (intervalId.current) clearInterval(intervalId.current);
+      controllerRef.current.abort();
+    };
+  }, [slides.current]);
 
-  // Handling dot buttons
-  // const handleDotClick = (dot) => {
-  //   const dotIndex = dots.indexOf(dot);
-  //   const currSlidePos = slider.querySelector('.selected').dataset.position;
-  //   const targetSlidePos = slider.querySelector(`[data-position='${dotIndex}']`)
-  //     .dataset.position;
+  const handleClick = (dir: number): void => {
+    slides.current[index].classList.remove('selected');
+    if (dir === -1) {
+      setIndex((pIndex) =>
+        pIndex === 0 ? slides.current.length - 1 : pIndex - 1
+      );
+      slides.current[index].classList.add('selected');
+      slider.current!.prepend(slider.current!.lastElementChild!);
+    }
+    if (dir === 1) {
+      setIndex((pIndex) =>
+        pIndex === slides.current.length - 1 ? 0 : pIndex + 1
+      );
+      slides.current[index].classList.add('selected');
+      slider.current!.append(slider.current!.firstElementChild!);
+    }
+  };
 
-  //   if (currSlidePos < targetSlidePos) {
-  //     const count = targetSlidePos - currSlidePos;
-  //     for (let i = count; i > 0; i--) nextBtn.click();
-  //   }
+  const handleDotClick = async (idx: number): Promise<void> => {
+    const count = idx < index ? index - idx : idx - index;
+    for (let i = count; i > 0; i--) {
+      idx < index ? prevBtn.current!.click() : nextBtn.current!.click();
+      await pause(500);
+    }
+  };
 
-  //   if (currSlidePos > targetSlidePos) {
-  //     const count = currSlidePos - targetSlidePos;
-  //     for (let i = count; i > 0; i--) prevBtn.click();
-  //   }
-  // };
-
-  // const dotNav = createDots(carousel, slides);
-  // const dots = [...dotNav.children];
-  // const prevBtn = buttons[0];
-  // const nextBtn = buttons[1];
-
-  // dotNav.addEventListener('click', (e) => {
-  //   const dot = e.target.closest('button');
-  //   if (!dot) return;
-  //   handleDotClick(dot);
-  // });
-
-  // Auto sliding
-  // const slideTiming = 5000;
-  // let interval;
-  // const slideInterval = () =>
-  //   (interval = setInterval(() => nextBtn.click(), slideTiming));
-
-  // carousel.addEventListener('mouseover', () => clearInterval(interval));
-  // carousel.addEventListener('mouseleave', slideInterval);
-  // slideInterval();
+  const startInterval = (ms: number): void => {
+    if (intervalId.current !== undefined) intervalId.current = undefined;
+    intervalId.current = setInterval(() => nextBtn.current!.click(), ms);
+  };
 
   return (
-    <main className="main">
-      <div
-        className="carousel"
-        ref={carousel}>
-        <button
-          onClick={() => handleClick(-1)}
-          type="button"
-          className="carousel_btn jsPrev"
-          aria-label="Previous slide">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round">
-            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
-          </svg>
-        </button>
-
-        <div className="carousel_track-container">
-          <ul
-            ref={slider}
-            className="carousel_track">
+    <>
+      <main className="main">
+        <div
+          className="carousel"
+          ref={carousel}>
+          <div className="carousel_track-container">
+            <ul
+              ref={slider}
+              className="carousel_track">
+              {placeholderImages.map((src, idx) => (
+                <Fragment key={idx}>
+                  <li
+                    className={`carousel_slide ${
+                      idx === index ? 'selected' : ''
+                    }`}
+                    ref={(el) => {
+                      if (el) slides.current[idx] = el;
+                    }}>
+                    <div className="carousel_image -z-10">
+                      <img
+                        src={src}
+                        alt=""
+                        role="presentation"
+                      />
+                    </div>
+                  </li>
+                </Fragment>
+              ))}
+            </ul>
+          </div>
+          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-4">
             {placeholderImages.map((src, idx) => (
-              <li
-                className={`carousel_slide ${idx === index ? 'selected' : ''}`}
-                key={idx}
-                ref={(el) => {
-                  if (el) slides.current[idx] = el;
-                }}>
-                <div className="carousel_image">
-                  <img
-                    src={src}
-                    alt=""
-                    role="presentation"
-                  />
-                </div>
-                <h2 className="carousel_title">Slide {idx + 1}</h2>
-              </li>
+              <Fragment key={idx}>
+                <button
+                  disabled={idx === index}
+                  onClick={() => handleDotClick(idx)}
+                  key={idx}
+                  type="button"
+                  className={`disabled:cursor-none w-5 h-5 rounded-full transition-colors duration-200 ${
+                    idx === index ? 'bg-[#1bb9ed]' : 'bg-gray-200'
+                  }`}
+                  aria-label={`Slide number ${idx + 1}`}
+                />
+              </Fragment>
             ))}
-          </ul>
+          </div>
+          <button
+            ref={prevBtn}
+            onClick={() => handleClick(-1)}
+            type="button"
+            className="cursor-pointer z-10 absolute top-1/2 -translate-y-1/2 left-10 hover:bg-[#1bb9ed] hover:border-[#1bb9ed] rounded-full border-2 border-white text-white"
+            aria-label="Previous slide">
+            <Icon
+              name="chevronLeft"
+              size="xl"
+            />
+          </button>
+          <button
+            ref={nextBtn}
+            onClick={() => handleClick(1)}
+            type="button"
+            className="cursor-pointer z-10 absolute top-1/2 -translate-y-1/2 right-10 hover:bg-[#1bb9ed] hover:border-[#1bb9ed] rounded-full border-2 border-white text-white"
+            aria-label="Next slide">
+            <Icon
+              name="chevronRight"
+              size="xl"
+            />
+          </button>
         </div>
-
-        <button
-          onClick={() => handleClick(1)}
-          type="button"
-          className="carousel_btn jsNext"
-          aria-label="Next slide">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round">
-            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
-          </svg>
-        </button>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }
 
