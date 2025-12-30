@@ -1,4 +1,4 @@
-import { Carousel } from '@/components';
+import { Carousel, List } from '@/components';
 
 export default function Home() {
   const data = {
@@ -24,7 +24,12 @@ export default function Home() {
       { color: '#5B3644' },
     ],
   };
-  return <Carousel {...data} />;
+  return (
+    <>
+      <List />
+      {/* <Carousel {...data} /> */}
+    </>
+  );
 }
 
 // https://jsfiddle.net/21fx6ge7/
