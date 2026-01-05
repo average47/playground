@@ -1,5 +1,5 @@
 export interface IProgressProps {
-  percent?: number;
-  strokeWidth?: number;
+  length: number;
   strokeColor?: string;
+  size: number;
 }
