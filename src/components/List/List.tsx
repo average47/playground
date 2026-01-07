@@ -1,4 +1,5 @@
 'use client';
+import { dir } from 'console';
 import {
   Fragment,
   useState,
@@ -35,8 +36,6 @@ export default function List({ data }: ListProps) {
   const container = useRef<HTMLUListElement>(null);
   const [height, setHeight] = useState<number>(0);
 
-  console.log(data);
-
   const windowSizeHandler = () => {
     if (!container.current) return;
     setHeight(container.current.children[0].getBoundingClientRect().height);
@@ -47,25 +46,24 @@ export default function List({ data }: ListProps) {
     setInTransition(false);
     console.log('transition ended');
     if (direction === 1) {
-      // container.current.prepend(container.current.lastElementChild!);
+      container.current.prepend(container.current.lastElementChild!);
     }
     if (direction === -1) {
-      // container.current.appendChild(container.current.firstElementChild!);
+      container.current.appendChild(container.current.firstElementChild!);
     }
   };
 
   const handleClick = (dir: number): void => {
     if (!container.current) return;
-    setInTransition(true);
-    setDirection(dir);
     if (dir === 1) {
-      container.current.style.transform = `translateY(0px)`;
+      container.current.prepend(container.current.lastElementChild!);
       setIndex((prev) => (prev - 1 + items.length) % items.length);
     }
     if (dir === -1) {
-      container.current.style.transform = `translateY(-${height}px)`;
+      container.current.appendChild(container.current.firstElementChild!);
       setIndex((prev) => (prev + 1) % items.length);
     }
+    setDirection((prev) => (prev === dir ? prev : dir));
   };
 
   useLayoutEffect(() => {
@@ -77,22 +75,19 @@ export default function List({ data }: ListProps) {
     if (!container.current) return;
     setHeight(container.current.children[0].getBoundingClientRect().height);
     window.addEventListener('resize', windowSizeHandler);
-    container.current.addEventListener('transitionend', transitionHandler);
     return () => {
       window.removeEventListener('resize', windowSizeHandler);
-      container.current?.removeEventListener(
-        'transitionend',
-        transitionHandler
-      );
     };
-  }, []);
+  }, [height, index]);
 
   return (
     <>
       <div className="container">
         <div className="carousel w-80 h-60 p-0 m-12 border-10 border-white shadow-md overflow-hidden">
           <ul
-            style={{ transform: `translateY(-${height}px)` }}
+            style={{
+              transform: `translateY(-${height * (index + 1)}px)`,
+            }}
             ref={container}
             className="flex flex-col justify-start transition-transform duration-500 ease-in-out">
             {data.children.map(
@@ -124,7 +119,7 @@ export default function List({ data }: ListProps) {
         Previous
       </button>
       <pre className="text-xs text-gray-400">
-        {items.join(', ')} | {index} | {height}px
+        {index} | {height}px | {direction === 1 ? 'up' : 'down'}
       </pre>
     </>
   );
