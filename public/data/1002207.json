@@ -1,0 +1,994 @@
+{
+  "data": {
+    "type": "page",
+    "properties": {
+      "pageType": "show",
+      "pageVariant": "gated",
+      "className": "show-page gated",
+      "ogpType": "video.tv_show",
+      "schemaType": "WebSite",
+      "description": "Escape into a tale of forbidden love and ancient magic, set in a world where witches, vampires, and daemons live amongst us … hiding in plain sight. Based on the best-selling All Souls Trilogy by Deborah Harkness. Sign up for a free trial to watch A Discovery of Witches and other popular TV shows, classic movies, AMC+ Originals and more.",
+      "title": "Watch A Discovery of Witches Online | Stream New Full Episodes | AMC+",
+      "pageTitle": "A Discovery of Witches",
+      "showName": "a-discovery-of-witches",
+      "imageDesktop": "https://images.cds.amcn.com/amcn/tve/amcn/discovery-of-witches-S1-key-art-2560x1440_MobileApp_HomeScreen.jpg",
+      "analyticsObject": {
+        "page-variant": "gated",
+        "event": "series-details-view",
+        "itemText": "A Discovery of Witches",
+        "amcnId": "RLA216115",
+        "contentEpisode": -1,
+        "contentNetworkOfRecordId": 1000007,
+        "contentSeason": -1,
+        "contentShow": "none",
+        "contentTitle": "A Discovery of Witches",
+        "nid": 1002207
+      },
+      "countryCode": "US",
+      "entitlements": ["amcn-auth", "ob-sub-amcplus"],
+      "monitoring": {
+        "page-variant": "gated"
+      },
+      "id": "1002207",
+      "manifestType": "show"
+    },
+    "children": [
+      {
+        "type": "hero",
+        "properties": {
+          "cardLayout": "amcplus",
+          "className": "hero-series-details-ap hero-gated",
+          "contentType": "series",
+          "flagCaption": "“Wickedly Irresistible” – TV Insider",
+          "TTS": {
+            "speechText": "A Discovery of Witches, Escape into a tale of forbidden love and ancient magic, set in a world where witches, vampires, and daemons live amongst us … hiding in plain sight. Based on the best-selling All Souls Trilogy by Deborah Harkness., TV-MA, Romance, 2019, 3 seasons"
+          },
+          "flagType": "default",
+          "images": {
+            "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH030912420000_discovery-of-witches-s3__img_wide_16x9.jpg",
+            "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH030912420000_discovery-of-witches-s3__img_long_81x100.jpg",
+            "tablet": "https://images.cds.amcn.com/amcn/tve/amcn/a-discovery-of-witches-season-2-S2-key-art-800x600_MobileWeb_HomeHero_v01.jpg"
+          },
+          "layout": "action-hero-ap",
+          "meta": {
+            "alt": "Watch A Discovery of Witches Online | Stream Full Episodes",
+            "nid": 1002207,
+            "schemaType": "TVSeries",
+            "showTime": "“Wickedly Irresistible” – TV Insider",
+            "title": "A Discovery of Witches"
+          },
+          "subheadings": [
+            {
+              "icon": "sundancenow",
+              "id": "network",
+              "title": "sundancenow",
+              "type": "icon"
+            },
+            {
+              "id": "rating",
+              "title": "TV-MA",
+              "type": "badge"
+            },
+            {
+              "id": "cc",
+              "title": "CC",
+              "type": "badge"
+            },
+            {
+              "typeface": "body-00",
+              "typefaceDesktop": "body-1",
+              "typefaceTablet": "body-1",
+              "title": "Romance",
+              "type": "text"
+            },
+            {
+              "typeface": "body-00",
+              "typefaceDesktop": "body-1",
+              "typefaceTablet": "body-1",
+              "title": "3 seasons",
+              "type": "text"
+            }
+          ],
+          "text": {
+            "description": "Escape into a tale of forbidden love and ancient magic, set in a world where witches, vampires, and daemons live amongst us … hiding in plain sight. Based on the best-selling All Souls Trilogy by Deborah Harkness.",
+            "showTitle": {
+              "title": "A Discovery of Witches",
+              "titleImage": {
+                "default": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH030912420000_discovery-of-witches-s3__img_logo.png"
+              }
+            }
+          },
+          "watermark": {
+            "desktop": [
+              "https://cdn.amcnetworks.com/amcplus/scrims/scrim_left-bottom_lg.png,0p,0p,20,0,100"
+            ],
+            "mobile": [
+              "https://cdn.amcnetworks.com/amcplus/scrims/scrim_from-bottom_lg.png,0p,0p,20,0,100"
+            ],
+            "mobile_landscape": [
+              "https://cdn.amcnetworks.com/amcplus/scrims/scrim_from-bottom_lg.png,0p,0p,20,0,100"
+            ],
+            "tablet": [
+              "https://cdn.amcnetworks.com/amcplus/scrims/scrim_from-bottom_lg.png,0p,0p,20,0,100"
+            ],
+            "tablet_landscape": [
+              "https://cdn.amcnetworks.com/amcplus/scrims/scrim_from-bottom_lg.png,0p,0p,20,0,100"
+            ]
+          }
+        },
+        "children": [
+          {
+            "type": "container",
+            "properties": {
+              "callback": {
+                "type": "userManifest",
+                "endpoint": {
+                  "url": "type/hero-buttons/id/1002207"
+                },
+                "replaceNodeID": "userButtonsContainer"
+              },
+              "componentId": "userButtonsContainer"
+            }
+          }
+        ]
+      },
+      {
+        "type": "tabs",
+        "properties": {
+          "tabs": [
+            {
+              "active": false,
+              "analyticsObject": {
+                "navComponentName": "tab_bar"
+              },
+              "key": "seasons",
+              "permalink": "/shows/a-discovery-of-witches/episodes--1002265",
+              "label": "Episodes"
+            },
+            {
+              "active": false,
+              "analyticsObject": {
+                "navComponentName": "tab_bar"
+              },
+              "key": "you-may-like",
+              "permalink": "/shows/a-discovery-of-witches--1002207",
+
+              "label": "You May Like"
+            },
+            {
+              "active": true,
+              "analyticsObject": {
+                "navComponentName": "tab_bar"
+              },
+              "key": "info",
+              "permalink": "/shows/a-discovery-of-witches--1002207",
+              "label": "Info"
+            },
+            {
+              "active": false,
+              "analyticsObject": {
+                "navComponentName": "tab_bar"
+              },
+              "key": "extras",
+              "permalink": "/shows/a-discovery-of-witches--1002207",
+              "label": "Extras"
+            }
+          ]
+        },
+        "children": [
+          {
+            "type": "container",
+            "properties": {
+              "id": "seasons"
+            },
+            "children": [
+              {
+                "type": "container",
+                "properties": {
+                  "callback": {
+                    "type": "userManifest",
+                    "endpoint": {
+                      "url": "type/recommendation-season-dropdown/id/1002207"
+                    },
+                    "replaceNodeID": "recommendationSeasonDropdown"
+                  },
+                  "componentId": "recommendationSeasonDropdown"
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "properties": {
+              "id": "info"
+            },
+            "children": [
+              {
+                "type": "meta-section",
+                "properties": {
+                  "TTS": {
+                    "speechText": "A Discovery of Witches, Escape into a tale of forbidden love and ancient magic, set in a world where witches, vampires, and daemons live amongst us … hiding in plain sight. Based on the best-selling All Souls Trilogy by Deborah Harkness., Romance, Sci-Fi & Fantasy, Drama, British Drama, TV-MA, 3 seasons"
+                  },
+                  "meta": [
+                    {
+                      "items": [
+                        "Romance",
+                        "Sci-Fi & Fantasy",
+                        "Drama",
+                        "British Drama"
+                      ],
+                      "key": "genres",
+                      "title": "Genres"
+                    },
+                    {
+                      "items": ["TV-MA"],
+                      "key": "rating",
+                      "title": "Rating"
+                    },
+                    {
+                      "items": 3,
+                      "key": "seasons-number",
+                      "title": "Seasons"
+                    },
+                    {
+                      "items": ["Teresa Palmer", "Matthew Goode"],
+                      "key": "cast",
+                      "title": "Cast"
+                    }
+                  ],
+                  "text": {
+                    "description": "Escape into a tale of forbidden love and ancient magic, set in a world where witches, vampires, and daemons live amongst us … hiding in plain sight. Based on the best-selling All Souls Trilogy by Deborah Harkness.",
+                    "title": "A Discovery of Witches"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "properties": {
+              "id": "extras"
+            },
+            "children": [
+              {
+                "type": "list",
+                "properties": {
+                  "analyticsObject": {
+                    "listMode": "grid",
+                    "clickthroughUrl": "none",
+                    "searchValue": "none",
+                    "listPosition": -1,
+                    "amcnId": "RLA216115",
+                    "contentEpisode": -1,
+                    "contentNetworkOfRecordId": 1000007,
+                    "contentSeason": -1,
+                    "contentShow": "none",
+                    "contentTitle": "A Discovery of Witches",
+                    "nid": 1002207
+                  },
+                  "mode": "grid"
+                },
+                "children": [
+                  {
+                    "type": "card",
+                    "properties": {
+                      "TTS": {
+                        "speechText": "A Discovery of Witches Trailer, Diana Bishop, a witch denying her own heritage, calls up an ancient manuscript from Oxford’s library and is thrown into a dangerous mystery. Her alliance with vampire Matthew Claremont violates taboos and shakes the fragile peace between the species."
+                      },
+                      "analyticsObject": {
+                        "amcnId": "none",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000003,
+                        "contentSeason": -1,
+                        "contentShow": "A Discovery of Witches",
+                        "contentTitle": "A Discovery of Witches Trailer",
+                        "nid": 1007698,
+                        "events": {
+                          "play_click": {
+                            "label": "card",
+                            "event_name": "play_click"
+                          }
+                        }
+                      },
+                      "contentType": "extra",
+                      "image": "https://images.cds.amcn.com/amcn/tve/amcn/dow_amcp_trailer40_1920x1080.jpg",
+                      "layout": "video-detail-extended",
+                      "meta": {
+                        "nid": 1007698,
+                        "permalink": "/shows/a-discovery-of-witches/videos/a-discovery-of-witches-trailer--1007698"
+                      },
+                      "playBadge": {
+                        "icon": "play"
+                      },
+                      "text": {
+                        "description": "Diana Bishop, a witch denying her own heritage, calls up an ancient manuscript from Oxford’s library and is thrown into a dangerous mystery. Her alliance with vampire Matthew Claremont violates taboos and shakes the fragile peace between the species.",
+                        "title": "A Discovery of Witches Trailer",
+                        "duration": "43s"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "TTS": {
+                        "speechText": "A Discovery of Witches Sneak Peek: Season 1, Episode 1, Meet Diana Bishop, a historian researching at Oxford -- and a witch who can't control her own powers. Don't miss the Series Premiere Sunday, April 7 at 9/8c."
+                      },
+                      "analyticsObject": {
+                        "amcnId": "none",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000003,
+                        "contentSeason": -1,
+                        "contentShow": "A Discovery of Witches",
+                        "contentTitle": "A Discovery of Witches Sneak Peek: Season 1, Episode 1",
+                        "nid": 1007700,
+                        "events": {
+                          "play_click": {
+                            "label": "card",
+                            "event_name": "play_click"
+                          }
+                        }
+                      },
+                      "contentType": "extra",
+                      "image": "https://images.cds.amcn.com/amcn/tve/amcn/ADOW_101_SP.jpg",
+                      "layout": "video-detail-extended",
+                      "meta": {
+                        "nid": 1007700,
+                        "permalink": "/shows/a-discovery-of-witches/videos/a-discovery-of-witches-sneak-peek-season-1-episode-1--1007700"
+                      },
+                      "playBadge": {
+                        "icon": "play"
+                      },
+                      "text": {
+                        "description": "Meet Diana Bishop, a historian researching at Oxford -- and a witch who can't control her own powers. Don't miss the Series Premiere Sunday, April 7 at 9/8c.",
+                        "title": "A Discovery of Witches Sneak Peek: Season 1, Episode 1",
+                        "duration": "44s"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "TTS": {
+                        "speechText": "A Discovery of Witches: A Look at the Series and Characters, The cast offers an in-depth look at the series as they introduce their characters and the rich world of the show. Don't miss the series premiere Sunday, April 7 at 9/8c on AMC."
+                      },
+                      "analyticsObject": {
+                        "amcnId": "none",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000003,
+                        "contentSeason": -1,
+                        "contentShow": "A Discovery of Witches",
+                        "contentTitle": "A Discovery of Witches: A Look at the Series and Characters",
+                        "nid": 1007699,
+                        "events": {
+                          "play_click": {
+                            "label": "card",
+                            "event_name": "play_click"
+                          }
+                        }
+                      },
+                      "contentType": "extra",
+                      "image": "https://images.cds.amcn.com/amcn/tve/amcn/DOW_S1_PREPREM_LOOKAT_CHARACTERS.jpg",
+                      "layout": "video-detail-extended",
+                      "meta": {
+                        "nid": 1007699,
+                        "permalink": "/shows/a-discovery-of-witches/videos/a-discovery-of-witches-a-look-at-the-series-and-characters--1007699"
+                      },
+                      "playBadge": {
+                        "icon": "play"
+                      },
+                      "text": {
+                        "description": "The cast offers an in-depth look at the series as they introduce their characters and the rich world of the show. Don't miss the series premiere Sunday, April 7 at 9/8c on AMC.",
+                        "title": "A Discovery of Witches: A Look at the Series and Characters",
+                        "duration": "3m 48s"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "TTS": {
+                        "speechText": "A Discovery of Witches Season 3 Teaser, The past is behind them. The revolution is ahead. A Discovery of Witches returns for Season 3 in 2022."
+                      },
+                      "analyticsObject": {
+                        "amcnId": "none",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000003,
+                        "contentSeason": -1,
+                        "contentShow": "A Discovery of Witches",
+                        "contentTitle": "A Discovery of Witches Season 3 Teaser",
+                        "nid": 1010232,
+                        "events": {
+                          "play_click": {
+                            "label": "card",
+                            "event_name": "play_click"
+                          }
+                        }
+                      },
+                      "contentType": "extra",
+                      "image": "https://images.cds.amcn.com/amcn/tve/amcn/408101_AMCP_ADOW_S3_Teaser.jpg",
+                      "layout": "video-detail-extended",
+                      "meta": {
+                        "nid": 1010232,
+                        "permalink": "/shows/a-discovery-of-witches/videos/a-discovery-of-witches-season-3-teaser--1010232"
+                      },
+                      "playBadge": {
+                        "icon": "play"
+                      },
+                      "text": {
+                        "description": "The past is behind them. The revolution is ahead. A Discovery of Witches returns for Season 3 in 2022.",
+                        "title": "A Discovery of Witches Season 3 Teaser",
+                        "duration": "1m 58s"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "properties": {
+              "id": "you-may-like"
+            },
+            "children": [
+              {
+                "type": "list",
+                "properties": {
+                  "analyticsObject": {
+                    "listMode": "grid",
+                    "clickthroughUrl": "none",
+                    "searchValue": "none",
+                    "listPosition": -1,
+                    "amcnId": "RLA216115",
+                    "contentEpisode": -1,
+                    "contentNetworkOfRecordId": 1000007,
+                    "contentSeason": -1,
+                    "contentShow": "none",
+                    "contentTitle": "A Discovery of Witches",
+                    "nid": 1002207
+                  },
+                  "mode": "grid"
+                },
+                "children": [
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "FTP155820",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000005,
+                        "contentSeason": -1,
+                        "contentShow": "The Last Anniversary",
+                        "contentTitle": false,
+                        "nid": 1072020,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/the-last-anniversary--1072020",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": ["Drama", "Mystery & Thriller"],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH056126020000_last-anniversary-binge__img_wide_poster_16x9_u3j286fotoh.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH056126020000_last-anniversary-binge__img_poster_2x3_dssz6qcmgku.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH056126020000_last-anniversary-binge__img_wide_poster_16x9_u3j286fotoh.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1072020,
+                        "permalink": "/shows/the-last-anniversary--1072020"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "FTP155627",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000007,
+                        "contentSeason": -1,
+                        "contentShow": "Fallen",
+                        "contentTitle": false,
+                        "nid": 1071618,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/fallen--1071618",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": ["Sci-Fi & Fantasy", "Drama"],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP155580_fallen-binge__img_wide_poster_16x9_2.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP155580_fallen-binge__img_poster_2x3.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP155580_fallen-binge__img_wide_poster_16x9_2.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1071618,
+                        "permalink": "/shows/fallen--1071618"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "FTP139005",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000005,
+                        "contentSeason": -1,
+                        "contentShow": "Domino Day: Lone Witch",
+                        "contentTitle": false,
+                        "nid": 1068856,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/domino-day-lone-witch--1068856",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": ["Drama"],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP139005_domino-day-US__img_wide_poster_16x9_cpjxqc9zoq9.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP139005_domino-day-US__img_poster_2x3_ukunbirz59d.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP139005_domino-day-US__img_wide_poster_16x9_cpjxqc9zoq9.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1068856,
+                        "permalink": "/shows/domino-day-lone-witch--1068856"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "FTP158486",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000005,
+                        "contentSeason": -1,
+                        "contentShow": "Sanctuary: A Witch's Tale",
+                        "contentTitle": false,
+                        "nid": 1065357,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/sanctuary-a-witch-s-tale--1065357",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": ["Drama", "Sci-Fi & Fantasy"],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH049640960000_sanctuary-witchs-tale__img_wide_poster_16x9_9eijn6msd6m.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH049640960000_sanctuary-witchs-tale__img_poster_2x3_izyjw78ji6.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH049640960000_sanctuary-witchs-tale__img_wide_poster_16x9_9eijn6msd6m.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1065357,
+                        "permalink": "/shows/sanctuary-a-witch-s-tale--1065357"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "FTP157117",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000001,
+                        "contentSeason": -1,
+                        "contentShow": "Salem",
+                        "contentTitle": false,
+                        "nid": 1073662,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/salem--1073662",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": ["Drama", "Sci-Fi & Fantasy"],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP157117_salem-s1__img_wide_poster_16x9_bko91fo8x6s.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP157117_salem-s1__img_poster_2x3_yn4f145pp59.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP157117_salem-s1__img_wide_poster_16x9_bko91fo8x6s.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1073662,
+                        "permalink": "/shows/salem--1073662"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "FTP63467",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000005,
+                        "contentSeason": -1,
+                        "contentShow": "Mayfair Witches",
+                        "contentTitle": false,
+                        "nid": 1059404,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/mayfair-witches--1059404",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": [
+                        "Drama",
+                        "Mystery & Thriller",
+                        "Originals & Exclusives",
+                        "Sci-Fi & Fantasy",
+                        "Horror"
+                      ],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH045643060000_mayfair-witches_v2__img_wide_poster_16x9.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH045643060000_mayfair-witches_v2__img_poster_2x3.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH045643060000_mayfair-witches_v2__img_wide_poster_16x9.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1059404,
+                        "permalink": "/shows/mayfair-witches--1059404"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "FTP69906",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000005,
+                        "contentSeason": -1,
+                        "contentShow": "Talamasca: The Secret Order",
+                        "contentTitle": false,
+                        "nid": 1072344,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/talamasca-the-secret-order--1072344",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": ["Drama"],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH058584900000_talamasca-secret-order__img_wide_poster_16x9.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH058584900000_talamasca-secret-order__img_poster_2x3.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH058584900000_talamasca-secret-order__img_wide_poster_16x9.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1072344,
+                        "permalink": "/shows/talamasca-the-secret-order--1072344"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "RLA236634",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000005,
+                        "contentSeason": -1,
+                        "contentShow": "Interview With The Vampire",
+                        "contentTitle": false,
+                        "nid": 1053259,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/interview-with-the-vampire--1053259",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": [
+                        "Drama",
+                        "LGBTQ+",
+                        "Black Stories",
+                        "Originals & Exclusives",
+                        "Sci-Fi & Fantasy",
+                        "Horror"
+                      ],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH043931170000_interview-with-the-vampire__img_wide_poster_16x9_fxvfvxcdft6.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH043931170000_interview-with-the-vampire__img_poster_2x3_gzb5tkmfh8g.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH043931170000_interview-with-the-vampire__img_wide_poster_16x9_fxvfvxcdft6.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1053259,
+                        "permalink": "/shows/interview-with-the-vampire--1053259"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "FTP138983",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000001,
+                        "contentSeason": -1,
+                        "contentShow": "Dracula",
+                        "contentTitle": false,
+                        "nid": 1068628,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/dracula--1068628",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": [
+                        "Drama",
+                        "Horror",
+                        "Romance",
+                        "Mystery & Thriller"
+                      ],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP138983_dracula-2013-s1__img_wide_poster_16x9_7gd6je2z9d.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP138983_dracula-2013-s1__img_poster_2x3_qymbq9y8tp.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP138983_dracula-2013-s1__img_wide_poster_16x9_7gd6je2z9d.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1068628,
+                        "permalink": "/shows/dracula--1068628"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "SPP10610836700",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000001,
+                        "contentSeason": -1,
+                        "contentShow": "Hemlock Grove",
+                        "contentTitle": false,
+                        "nid": 1073382,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/hemlock-grove--1073382",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": ["Horror", "Drama"],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_SPP10610836700_hemlock-grove-s3__img_wide_poster_16x9_eaxga3pcfqq.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_SPP10610836700_hemlock-grove-s3__img_poster_2x3_ozl373fciap.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_SPP10610836700_hemlock-grove-s3__img_wide_poster_16x9_eaxga3pcfqq.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1073382,
+                        "permalink": "/shows/hemlock-grove--1073382"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "FTP157978",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000003,
+                        "contentSeason": -1,
+                        "contentShow": "Bitten",
+                        "contentTitle": false,
+                        "nid": 1073163,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/bitten--1073163",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": ["Drama", "Sci-Fi & Fantasy"],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP157978_bitten-s3__img_wide_poster_16x9_jfkh4pbp61i.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP157978_bitten-s3__img_poster_2x3_5x1fv40rquw.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP157978_bitten-s3__img_wide_poster_16x9_jfkh4pbp61i.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1073163,
+                        "permalink": "/shows/bitten--1073163"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "RLA227658",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000005,
+                        "contentSeason": -1,
+                        "contentShow": "Being Human",
+                        "contentTitle": false,
+                        "nid": 1029026,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/being-human--1029026",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": [
+                        "Drama",
+                        "Comedy",
+                        "Sci-Fi & Fantasy",
+                        "Horror",
+                        "LGBTQ+",
+                        "British Drama"
+                      ],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH013637560000_being-human__img_wide_poster_16x9.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH013637560000_being-human__img_poster_2x3.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH013637560000_being-human__img_wide_poster_16x9.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1029026,
+                        "permalink": "/shows/being-human--1029026"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "RLA237593",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000005,
+                        "contentSeason": -1,
+                        "contentShow": "Being Human (UK)",
+                        "contentTitle": false,
+                        "nid": 1065243,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/being-human-uk--1065243",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": ["Drama", "Sci-Fi & Fantasy"],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_RLA237593_being-human-uk-s1__img_wide_poster_16x9_20lt7c9mujs.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_RLA237593_being-human-uk-s1__img_poster_2x3_ua56us634e.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_RLA237593_being-human-uk-s1__img_wide_poster_16x9_20lt7c9mujs.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1065243,
+                        "permalink": "/shows/being-human-uk--1065243"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "FTP138995",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000005,
+                        "contentSeason": -1,
+                        "contentShow": "Midwich Cuckoos: Village of the Damned",
+                        "contentTitle": false,
+                        "nid": 1070542,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/midwich-cuckoos-village-of-the-damned--1070542",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": [
+                        "Horror",
+                        "Sci-Fi & Fantasy",
+                        "Drama",
+                        "Mystery & Thriller"
+                      ],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP138995_midwich-cuckoos-village-of-the-damned__img_wide_poster_16x9_uwbaj2nclak.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP138995_midwich-cuckoos-village-of-the-damned__img_poster_2x3_wr195v6nwcp.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP138995_midwich-cuckoos-village-of-the-damned__img_wide_poster_16x9_uwbaj2nclak.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1070542,
+                        "permalink": "/shows/midwich-cuckoos-village-of-the-damned--1070542"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "RLA219601",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000003,
+                        "contentSeason": -1,
+                        "contentShow": "Soulmates",
+                        "contentTitle": false,
+                        "nid": 1008338,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/shows/soulmates--1008338",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "series",
+                      "genre": [
+                        "Sci-Fi & Fantasy",
+                        "Drama",
+                        "Romance",
+                        "Mystery & Thriller",
+                        "Originals & Exclusives"
+                      ],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH035935940000_soulmates__img_wide_poster_16x9.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH035935940000_soulmates-v2__img_poster_2x3.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH035935940000_soulmates__img_wide_poster_16x9.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1008338,
+                        "permalink": "/shows/soulmates--1008338"
+                      }
+                    }
+                  },
+                  {
+                    "type": "card",
+                    "properties": {
+                      "analyticsObject": {
+                        "amcnId": "RLA232158",
+                        "contentEpisode": -1,
+                        "contentNetworkOfRecordId": 1000001,
+                        "contentSeason": -1,
+                        "contentTitle": "The Twin",
+                        "nid": 1053621,
+                        "action": "clickthrough",
+                        "elementType": "none",
+                        "clickthroughUrl": "/movies/the-twin--1053621",
+                        "elementName": "none",
+                        "itemText": "none"
+                      },
+                      "contentType": "movie",
+                      "genre": ["Horror"],
+                      "images": {
+                        "desktop": "https://images.cds.amcn.com/amcn/amcplus/movie_tms_MV017982210000_twin__img_wide_poster_16x9.jpg",
+                        "mobile": "https://images.cds.amcn.com/amcn/amcplus/movie_tms_MV017982210000_twin__img_poster_2x3.jpg",
+                        "tablet": "https://images.cds.amcn.com/amcn/amcplus/movie_tms_MV017982210000_twin__img_wide_poster_16x9.jpg"
+                      },
+                      "layout": "image-poster-card",
+                      "meta": {
+                        "nid": 1053621,
+                        "permalink": "/movies/the-twin--1053621"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "status": 200,
+  "success": true
+}
