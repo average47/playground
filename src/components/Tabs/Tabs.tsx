@@ -1,5 +1,5 @@
 import { FC, JSX } from 'react';
-import type { TabItem } from './Tabs.types';
+import type { ITabProps, ITabItemProps, ICardProps } from './Tabs.types';
 import './Tabs.css';
 
 const data = [
@@ -43,23 +43,33 @@ const data = [
 
 const Tabs: FC<any> = ({ ...props }): JSX.Element => {
   const tabs = props.properties?.tabs || [];
-  console.log('Rendering Tabs with props:', props.properties);
+  const items = props.children || [];
+  const renderChildren = (item: ITabItemProps[]) => {
+    return JSON.stringify(item[0].children, null, 2);
+  };
   return (
-    <div className="bg-amber-50 border border-amber-200 rounded-lg shadow-md w-full h-full col-start-1 col-span-3 row-start-1 row-span-3 gridClass">
-      {tabs.map((tab: TabItem, index: number) => (
+    <div
+      style={{
+        gridTemplateColumns: `repeat(${tabs.length}, minmax(200px, 1fr))`,
+      }}
+      className="w-full h-full col-start-1 col-span-3 row-start-1 row-span-3 gridClass grid">
+      {tabs.map((tab: ITabProps, index: number) => (
         <details
           key={tab.key}
-          name="alpha"
+          name="details"
           style={{ '--n': index + 1 } as React.CSSProperties}
           open={tab.active}>
           <summary>{tab.label}</summary>
           <div>
-            {/* <p>{title}</p>
             <ul>
-              {items.map((item, itemIndex) => (
-                <li key={itemIndex}>{item}</li>
-              ))}
-            </ul> */}
+              {items
+                .filter((item: ITabItemProps) => item.properties.id === tab.key)
+                .map((item: ITabItemProps, itemIndex: number) => (
+                  <li key={itemIndex}>
+                    <pre>{JSON.stringify(item.children, null, 2)}</pre>
+                  </li>
+                ))}
+            </ul>
           </div>
         </details>
       ))}

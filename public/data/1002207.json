@@ -245,183 +245,167 @@
             ]
           },
           {
-            "type": "container",
+            "type": "list",
             "properties": {
-              "id": "extras"
+              "id": "extras",
+              "analyticsObject": {
+                "listMode": "grid",
+                "clickthroughUrl": "none",
+                "searchValue": "none",
+                "listPosition": -1,
+                "amcnId": "RLA216115",
+                "contentEpisode": -1,
+                "contentNetworkOfRecordId": 1000007,
+                "contentSeason": -1,
+                "contentShow": "none",
+                "contentTitle": "A Discovery of Witches",
+                "nid": 1002207
+              }
             },
             "children": [
               {
-                "type": "list",
+                "type": "card",
                 "properties": {
+                  "TTS": {
+                    "speechText": "A Discovery of Witches Trailer, Diana Bishop, a witch denying her own heritage, calls up an ancient manuscript from Oxford’s library and is thrown into a dangerous mystery. Her alliance with vampire Matthew Claremont violates taboos and shakes the fragile peace between the species."
+                  },
                   "analyticsObject": {
-                    "listMode": "grid",
-                    "clickthroughUrl": "none",
-                    "searchValue": "none",
-                    "listPosition": -1,
-                    "amcnId": "RLA216115",
+                    "amcnId": "none",
                     "contentEpisode": -1,
-                    "contentNetworkOfRecordId": 1000007,
+                    "contentNetworkOfRecordId": 1000003,
                     "contentSeason": -1,
-                    "contentShow": "none",
-                    "contentTitle": "A Discovery of Witches",
-                    "nid": 1002207
-                  },
-                  "mode": "grid"
-                },
-                "children": [
-                  {
-                    "type": "card",
-                    "properties": {
-                      "TTS": {
-                        "speechText": "A Discovery of Witches Trailer, Diana Bishop, a witch denying her own heritage, calls up an ancient manuscript from Oxford’s library and is thrown into a dangerous mystery. Her alliance with vampire Matthew Claremont violates taboos and shakes the fragile peace between the species."
-                      },
-                      "analyticsObject": {
-                        "amcnId": "none",
-                        "contentEpisode": -1,
-                        "contentNetworkOfRecordId": 1000003,
-                        "contentSeason": -1,
-                        "contentShow": "A Discovery of Witches",
-                        "contentTitle": "A Discovery of Witches Trailer",
-                        "nid": 1007698,
-                        "events": {
-                          "play_click": {
-                            "label": "card",
-                            "event_name": "play_click"
-                          }
-                        }
-                      },
-                      "contentType": "extra",
-                      "image": "https://images.cds.amcn.com/amcn/tve/amcn/dow_amcp_trailer40_1920x1080.jpg",
-                      "layout": "video-detail-extended",
-                      "meta": {
-                        "nid": 1007698,
-                        "permalink": "/shows/a-discovery-of-witches/videos/a-discovery-of-witches-trailer--1007698"
-                      },
-                      "playBadge": {
-                        "icon": "play"
-                      },
-                      "text": {
-                        "description": "Diana Bishop, a witch denying her own heritage, calls up an ancient manuscript from Oxford’s library and is thrown into a dangerous mystery. Her alliance with vampire Matthew Claremont violates taboos and shakes the fragile peace between the species.",
-                        "title": "A Discovery of Witches Trailer",
-                        "duration": "43s"
+                    "contentShow": "A Discovery of Witches",
+                    "contentTitle": "A Discovery of Witches Trailer",
+                    "nid": 1007698,
+                    "events": {
+                      "play_click": {
+                        "label": "card",
+                        "event_name": "play_click"
                       }
                     }
                   },
-                  {
-                    "type": "card",
-                    "properties": {
-                      "TTS": {
-                        "speechText": "A Discovery of Witches Sneak Peek: Season 1, Episode 1, Meet Diana Bishop, a historian researching at Oxford -- and a witch who can't control her own powers. Don't miss the Series Premiere Sunday, April 7 at 9/8c."
-                      },
-                      "analyticsObject": {
-                        "amcnId": "none",
-                        "contentEpisode": -1,
-                        "contentNetworkOfRecordId": 1000003,
-                        "contentSeason": -1,
-                        "contentShow": "A Discovery of Witches",
-                        "contentTitle": "A Discovery of Witches Sneak Peek: Season 1, Episode 1",
-                        "nid": 1007700,
-                        "events": {
-                          "play_click": {
-                            "label": "card",
-                            "event_name": "play_click"
-                          }
-                        }
-                      },
-                      "contentType": "extra",
-                      "image": "https://images.cds.amcn.com/amcn/tve/amcn/ADOW_101_SP.jpg",
-                      "layout": "video-detail-extended",
-                      "meta": {
-                        "nid": 1007700,
-                        "permalink": "/shows/a-discovery-of-witches/videos/a-discovery-of-witches-sneak-peek-season-1-episode-1--1007700"
-                      },
-                      "playBadge": {
-                        "icon": "play"
-                      },
-                      "text": {
-                        "description": "Meet Diana Bishop, a historian researching at Oxford -- and a witch who can't control her own powers. Don't miss the Series Premiere Sunday, April 7 at 9/8c.",
-                        "title": "A Discovery of Witches Sneak Peek: Season 1, Episode 1",
-                        "duration": "44s"
-                      }
-                    }
+                  "image": "https://images.cds.amcn.com/amcn/tve/amcn/dow_amcp_trailer40_1920x1080.jpg",
+                  "meta": {
+                    "nid": 1007698,
+                    "permalink": "/shows/a-discovery-of-witches/videos/a-discovery-of-witches-trailer--1007698"
                   },
-                  {
-                    "type": "card",
-                    "properties": {
-                      "TTS": {
-                        "speechText": "A Discovery of Witches: A Look at the Series and Characters, The cast offers an in-depth look at the series as they introduce their characters and the rich world of the show. Don't miss the series premiere Sunday, April 7 at 9/8c on AMC."
-                      },
-                      "analyticsObject": {
-                        "amcnId": "none",
-                        "contentEpisode": -1,
-                        "contentNetworkOfRecordId": 1000003,
-                        "contentSeason": -1,
-                        "contentShow": "A Discovery of Witches",
-                        "contentTitle": "A Discovery of Witches: A Look at the Series and Characters",
-                        "nid": 1007699,
-                        "events": {
-                          "play_click": {
-                            "label": "card",
-                            "event_name": "play_click"
-                          }
-                        }
-                      },
-                      "contentType": "extra",
-                      "image": "https://images.cds.amcn.com/amcn/tve/amcn/DOW_S1_PREPREM_LOOKAT_CHARACTERS.jpg",
-                      "layout": "video-detail-extended",
-                      "meta": {
-                        "nid": 1007699,
-                        "permalink": "/shows/a-discovery-of-witches/videos/a-discovery-of-witches-a-look-at-the-series-and-characters--1007699"
-                      },
-                      "playBadge": {
-                        "icon": "play"
-                      },
-                      "text": {
-                        "description": "The cast offers an in-depth look at the series as they introduce their characters and the rich world of the show. Don't miss the series premiere Sunday, April 7 at 9/8c on AMC.",
-                        "title": "A Discovery of Witches: A Look at the Series and Characters",
-                        "duration": "3m 48s"
-                      }
-                    }
+                  "playBadge": {
+                    "icon": "play"
                   },
-                  {
-                    "type": "card",
-                    "properties": {
-                      "TTS": {
-                        "speechText": "A Discovery of Witches Season 3 Teaser, The past is behind them. The revolution is ahead. A Discovery of Witches returns for Season 3 in 2022."
-                      },
-                      "analyticsObject": {
-                        "amcnId": "none",
-                        "contentEpisode": -1,
-                        "contentNetworkOfRecordId": 1000003,
-                        "contentSeason": -1,
-                        "contentShow": "A Discovery of Witches",
-                        "contentTitle": "A Discovery of Witches Season 3 Teaser",
-                        "nid": 1010232,
-                        "events": {
-                          "play_click": {
-                            "label": "card",
-                            "event_name": "play_click"
-                          }
-                        }
-                      },
-                      "contentType": "extra",
-                      "image": "https://images.cds.amcn.com/amcn/tve/amcn/408101_AMCP_ADOW_S3_Teaser.jpg",
-                      "layout": "video-detail-extended",
-                      "meta": {
-                        "nid": 1010232,
-                        "permalink": "/shows/a-discovery-of-witches/videos/a-discovery-of-witches-season-3-teaser--1010232"
-                      },
-                      "playBadge": {
-                        "icon": "play"
-                      },
-                      "text": {
-                        "description": "The past is behind them. The revolution is ahead. A Discovery of Witches returns for Season 3 in 2022.",
-                        "title": "A Discovery of Witches Season 3 Teaser",
-                        "duration": "1m 58s"
-                      }
-                    }
+                  "text": {
+                    "description": "Diana Bishop, a witch denying her own heritage, calls up an ancient manuscript from Oxford’s library and is thrown into a dangerous mystery. Her alliance with vampire Matthew Claremont violates taboos and shakes the fragile peace between the species.",
+                    "title": "A Discovery of Witches Trailer",
+                    "duration": "43s"
                   }
-                ]
+                }
+              },
+              {
+                "type": "card",
+                "properties": {
+                  "TTS": {
+                    "speechText": "A Discovery of Witches Sneak Peek: Season 1, Episode 1, Meet Diana Bishop, a historian researching at Oxford -- and a witch who can't control her own powers. Don't miss the Series Premiere Sunday, April 7 at 9/8c."
+                  },
+                  "analyticsObject": {
+                    "amcnId": "none",
+                    "contentEpisode": -1,
+                    "contentNetworkOfRecordId": 1000003,
+                    "contentSeason": -1,
+                    "contentShow": "A Discovery of Witches",
+                    "contentTitle": "A Discovery of Witches Sneak Peek: Season 1, Episode 1",
+                    "nid": 1007700,
+                    "events": {
+                      "play_click": {
+                        "label": "card",
+                        "event_name": "play_click"
+                      }
+                    }
+                  },
+                  "image": "https://images.cds.amcn.com/amcn/tve/amcn/ADOW_101_SP.jpg",
+                  "meta": {
+                    "nid": 1007700,
+                    "permalink": "/shows/a-discovery-of-witches/videos/a-discovery-of-witches-sneak-peek-season-1-episode-1--1007700"
+                  },
+                  "playBadge": {
+                    "icon": "play"
+                  },
+                  "text": {
+                    "description": "Meet Diana Bishop, a historian researching at Oxford -- and a witch who can't control her own powers. Don't miss the Series Premiere Sunday, April 7 at 9/8c.",
+                    "title": "A Discovery of Witches Sneak Peek: Season 1, Episode 1",
+                    "duration": "44s"
+                  }
+                }
+              },
+              {
+                "type": "card",
+                "properties": {
+                  "TTS": {
+                    "speechText": "A Discovery of Witches: A Look at the Series and Characters, The cast offers an in-depth look at the series as they introduce their characters and the rich world of the show. Don't miss the series premiere Sunday, April 7 at 9/8c on AMC."
+                  },
+                  "analyticsObject": {
+                    "amcnId": "none",
+                    "contentEpisode": -1,
+                    "contentNetworkOfRecordId": 1000003,
+                    "contentSeason": -1,
+                    "contentShow": "A Discovery of Witches",
+                    "contentTitle": "A Discovery of Witches: A Look at the Series and Characters",
+                    "nid": 1007699,
+                    "events": {
+                      "play_click": {
+                        "label": "card",
+                        "event_name": "play_click"
+                      }
+                    }
+                  },
+                  "image": "https://images.cds.amcn.com/amcn/tve/amcn/DOW_S1_PREPREM_LOOKAT_CHARACTERS.jpg",
+                  "meta": {
+                    "nid": 1007699,
+                    "permalink": "/shows/a-discovery-of-witches/videos/a-discovery-of-witches-a-look-at-the-series-and-characters--1007699"
+                  },
+                  "playBadge": {
+                    "icon": "play"
+                  },
+                  "text": {
+                    "description": "The cast offers an in-depth look at the series as they introduce their characters and the rich world of the show. Don't miss the series premiere Sunday, April 7 at 9/8c on AMC.",
+                    "title": "A Discovery of Witches: A Look at the Series and Characters",
+                    "duration": "3m 48s"
+                  }
+                }
+              },
+              {
+                "type": "card",
+                "properties": {
+                  "TTS": {
+                    "speechText": "A Discovery of Witches Season 3 Teaser, The past is behind them. The revolution is ahead. A Discovery of Witches returns for Season 3 in 2022."
+                  },
+                  "analyticsObject": {
+                    "amcnId": "none",
+                    "contentEpisode": -1,
+                    "contentNetworkOfRecordId": 1000003,
+                    "contentSeason": -1,
+                    "contentShow": "A Discovery of Witches",
+                    "contentTitle": "A Discovery of Witches Season 3 Teaser",
+                    "nid": 1010232,
+                    "events": {
+                      "play_click": {
+                        "label": "card",
+                        "event_name": "play_click"
+                      }
+                    }
+                  },
+                  "image": "https://images.cds.amcn.com/amcn/tve/amcn/408101_AMCP_ADOW_S3_Teaser.jpg",
+                  "meta": {
+                    "nid": 1010232,
+                    "permalink": "/shows/a-discovery-of-witches/videos/a-discovery-of-witches-season-3-teaser--1010232"
+                  },
+                  "playBadge": {
+                    "icon": "play"
+                  },
+                  "text": {
+                    "description": "The past is behind them. The revolution is ahead. A Discovery of Witches returns for Season 3 in 2022.",
+                    "title": "A Discovery of Witches Season 3 Teaser",
+                    "duration": "1m 58s"
+                  }
+                }
               }
             ]
           },
