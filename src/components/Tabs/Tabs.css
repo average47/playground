@@ -1,5 +1,4 @@
-
-
+/* @layer components { */
 details {
   display: grid;
   grid-column: 1 / -1;
@@ -12,21 +11,21 @@ summary {
   grid-column: var(--n) / span 1;
   grid-row: 1;
   display: grid;
-  padding: 1rem;
-  border-bottom: 2px solid dodgerblue;
   cursor: pointer;
   z-index: 1;
 }
 
 details[open] :is(summary, .summary) {
   font-weight: bold;
+  color: white;
+  padding-bottom: 0.15em;
+  border-bottom: 2px solid white;
 }
 
 details::details-content {
   grid-row: 2;
   grid-column: 1 / -1;
-  padding: 1rem;
-  border-bottom: 2px solid dodgerblue;
+  padding: 1rem 0;
 }
 
 details:not([open])::details-content {
@@ -44,3 +43,4 @@ details:not([open])::details-content {
     padding: 0.5rem;
   }
 }
+/* } */

@@ -1,11 +1,22 @@
 import { JSX } from 'react';
 import { HTMLComment } from '@/lib/src/htmlComment';
-import { Tabs } from './index';
+import { Card, Carousel, Grid, Swimlane, Tabs, Thumbnails } from './index';
 
-type ComponentType = 'tabs';
+type ComponentType =
+  | 'card'
+  | 'carousel'
+  | 'grid'
+  | 'swimlane'
+  | 'tabs'
+  | 'thumbnails';
 
 const typeToComponentMap: Record<ComponentType, React.ComponentType<any>> = {
+  card: Card,
+  carousel: Carousel,
+  grid: Grid,
+  swimlane: Swimlane,
   tabs: Tabs,
+  thumbnails: Thumbnails,
 };
 
 export function renderComponent(data: any, index: number): JSX.Element {
@@ -24,3 +35,5 @@ export function renderComponent(data: any, index: number): JSX.Element {
     />
   );
 }
+
+// list mode: Vertical, Swimlane:square|poster|network, Thumbnails || Grid || Carousel

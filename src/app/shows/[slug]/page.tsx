@@ -1,4 +1,3 @@
-import { Suspense } from 'react';
 import { getOfflineData } from '@/lib';
 import { renderComponent } from '@/components/renderComponent';
 
@@ -17,11 +16,13 @@ export default async function Page({
   const data = await getData(parseFloat(slug.split('--')[1]));
 
   return (
-    <>
-      {data.children.map((child: any, index: number) =>
-        renderComponent(child, index)
-      )}
-    </>
+    <main className="mx-auto space-y-8">
+      <>
+        {data.children.map((child: any, index: number) =>
+          renderComponent(child, index)
+        )}
+      </>
+    </main>
   );
 }
 

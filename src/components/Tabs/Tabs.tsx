@@ -1,75 +1,48 @@
 import { FC, JSX } from 'react';
-import type { ITabProps, ITabItemProps, ICardProps } from './Tabs.types';
+import { renderComponent } from '@/components/renderComponent';
+import type { ITabItemProps, ICardProps } from './Tabs.types';
 import './Tabs.css';
 
-const data = [
-  {
-    key: 0,
-    summary: 'Recent Tracks',
-    title: 'Your recent tracks:',
-    items: [
-      'The Beths - Mother, Pray For Me',
-      'The Beths - Metal',
-      'The Beths - No Joy',
-      'The Beths - Mosquitoes',
-      'The Beths - Straight Line Was A Lie',
-    ],
-  },
-  {
-    key: 1,
-    summary: 'Loved tracks',
-    title: 'Tracks you loved:',
-    items: [
-      'Marnie Stern - Believing Is Seeing',
-      'FKA twigs - Girl Feels Good',
-      'Fat Dog - Running',
-      'Parquet Courts - Tenderness',
-      'Sufjan Stevens - Will Anybody Ever Love Me?',
-    ],
-  },
-  {
-    key: 2,
-    summary: 'Following',
-    title: 'Artists you follow:',
-    items: [
-      'Amyl and the Sniffers',
-      'Du Blonde',
-      'Magdalena Bay',
-      'Flying Lotus',
-      'Horsegirl',
-    ],
-  },
-];
+interface ITabProps {
+  type: string;
+  properties: {
+    active: boolean;
+    key: string;
+    label: string;
+    permalink: string;
+  };
+  children: any[];
+}
 
 const Tabs: FC<any> = ({ ...props }): JSX.Element => {
-  const tabs = props.properties?.tabs || [];
   const items = props.children || [];
-  const renderChildren = (item: ITabItemProps[]) => {
-    return JSON.stringify(item[0].children, null, 2);
-  };
+  const max = Math.max(...items.map((item: ITabProps) => item.children.length));
   return (
     <div
       style={{
-        gridTemplateColumns: `repeat(${tabs.length}, minmax(200px, 1fr))`,
+        gridTemplateColumns: `repeat(${items.length}, auto) 1fr`,
       }}
-      className="w-full h-full col-start-1 col-span-3 row-start-1 row-span-3 gridClass grid">
-      {tabs.map((tab: ITabProps, index: number) => (
+      className="w-full h-full col-start-1 col-span-3 row-start-1 row-span-3 grid gap-x-9">
+      {items.map((item: ITabProps, index: number) => (
         <details
-          key={tab.key}
+          key={item.properties.key}
           name="details"
           style={{ '--n': index + 1 } as React.CSSProperties}
-          open={tab.active}>
-          <summary>{tab.label}</summary>
-          <div>
-            <ul>
-              {items
-                .filter((item: ITabItemProps) => item.properties.id === tab.key)
-                .map((item: ITabItemProps, itemIndex: number) => (
-                  <li key={itemIndex}>
-                    <pre>{JSON.stringify(item.children, null, 2)}</pre>
-                  </li>
-                ))}
-            </ul>
+          open={item.properties.active}>
+          <summary className="font-labelPrimaryXL text-gray-500 cursor-pointer select-none">
+            {item.properties.label}
+          </summary>
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(360px,1fr))] gap-9">
+            <>
+              {item.children.map((item: ITabItemProps, index: number) => (
+                <div key={index}>{renderComponent(item, index)}</div>
+              ))}
+              {Array.from({ length: max - item.children.length }).map(
+                (_, index) => (
+                  <div key={index} />
+                )
+              )}
+            </>
           </div>
         </details>
       ))}

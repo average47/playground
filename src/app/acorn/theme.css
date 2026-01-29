@@ -1,0 +1,19 @@
+:root {
+  /* -- Primary & Secondary Colors --------------------------------------- */
+  --primaryEnabled: var(--color-lime-500);
+  --primaryHover: var(--color-lime-600);
+  --primaryPressed: var(--color-lime-700);
+  --primaryDisabled: var(--color-grey-400);
+
+  /* -- Secondary Colors ------------------------------------------------- */
+  --secondaryEnabled: var(--color-white-100);
+  --secondaryHover: var(--color-grey-200);
+  --secondaryPressed: var(--color-grey-700);
+  --secondaryDisabled: var(--color-grey-400);
+
+  /* -- Danger Colors ---------------------------------------------------- */
+  --dangerEnabled: var(--color-red-500);
+  --dangerHover: var(--color-red-600);
+  --dangerPressed: var(--color-red-700);
+  --dangerDisabled: var(--color-grey-400);
+}

@@ -1,3 +1,9 @@
+export { Card } from './Card';
+export { Carousel } from './Carousel';
+export { Grid } from './Grid';
+export { Icon } from './Icon';
 export { List } from './List';
 export { Progress } from './Progress';
+export { Swimlane } from './Swimlane';
 export { Tabs } from './Tabs';
+export { Thumbnails } from './Thumbnails';
