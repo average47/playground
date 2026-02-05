@@ -138,7 +138,7 @@
           {
             "type": "container",
             "properties": {
-              "active": true,
+              "active": false,
               "key": "seasons",
               "label": "Episodes",
               "permalink": "/shows/a-discovery-of-witches/episodes--1002265"
@@ -162,9 +162,11 @@
           {
             "type": "list",
             "properties": {
-              "active": false,
+              "active": true,
+              "direction": "horizontal",
               "key": "you-may-like",
               "label": "You May Like",
+              "mode": "grid",
               "permalink": "/shows/a-discovery-of-witches--1002207"
             },
             "children": [
@@ -185,7 +187,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": ["Drama", "Mystery & Thriller"],
                   "image": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH056126020000_last-anniversary-binge__img_wide_poster_16x9_u3j286fotoh.jpg",
                   "meta": {
@@ -211,7 +213,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": ["Sci-Fi & Fantasy", "Drama"],
                   "image": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP155580_fallen-binge__img_wide_poster_16x9_2.jpg",
                   "meta": {
@@ -237,7 +239,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": ["Drama"],
                   "image": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP139005_domino-day-US__img_wide_poster_16x9_cpjxqc9zoq9.jpg",
                   "meta": {
@@ -263,7 +265,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": ["Drama", "Sci-Fi & Fantasy"],
                   "image": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH049640960000_sanctuary-witchs-tale__img_wide_poster_16x9_9eijn6msd6m.jpg",
                   "meta": {
@@ -289,7 +291,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": ["Drama", "Sci-Fi & Fantasy"],
                   "image": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP157117_salem-s1__img_wide_poster_16x9_bko91fo8x6s.jpg",
                   "meta": {
@@ -315,7 +317,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": [
                     "Drama",
                     "Mystery & Thriller",
@@ -347,7 +349,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": ["Drama"],
                   "image": "https://images.cds.amcn.com/amcn/amcplus/series_tms_SH058584900000_talamasca-secret-order__img_wide_poster_16x9.jpg",
                   "meta": {
@@ -373,7 +375,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": [
                     "Drama",
                     "LGBTQ+",
@@ -406,7 +408,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": ["Drama", "Horror", "Romance", "Mystery & Thriller"],
                   "image": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP138983_dracula-2013-s1__img_wide_poster_16x9_7gd6je2z9d.jpg",
                   "meta": {
@@ -432,7 +434,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": ["Horror", "Drama"],
                   "image": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_SPP10610836700_hemlock-grove-s3__img_wide_poster_16x9_eaxga3pcfqq.jpg",
                   "meta": {
@@ -458,7 +460,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": ["Drama", "Sci-Fi & Fantasy"],
                   "image": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_FTP157978_bitten-s3__img_wide_poster_16x9_jfkh4pbp61i.jpg",
                   "meta": {
@@ -484,7 +486,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": [
                     "Drama",
                     "Comedy",
@@ -517,7 +519,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": ["Drama", "Sci-Fi & Fantasy"],
                   "image": "https://images.cds.amcn.com/amcn/amcplus/series_amcn_RLA237593_being-human-uk-s1__img_wide_poster_16x9_20lt7c9mujs.jpg",
                   "meta": {
@@ -543,7 +545,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "series",
                   "genre": [
                     "Horror",
                     "Sci-Fi & Fantasy",
@@ -574,7 +576,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "movie",
                   "genre": [
                     "Sci-Fi & Fantasy",
                     "Drama",
@@ -605,7 +607,7 @@
                     "elementName": "none",
                     "itemText": "none"
                   },
-                  "contentType": "poster",
+                  "contentType": "movie",
                   "genre": ["Horror"],
                   "image": "https://images.cds.amcn.com/amcn/amcplus/movie_tms_MV017982210000_twin__img_wide_poster_16x9.jpg",
                   "meta": {
@@ -617,7 +619,7 @@
             ]
           },
           {
-            "type": "list",
+            "type": "container",
             "properties": {
               "active": false,
               "key": "info",
@@ -670,8 +672,10 @@
             "type": "list",
             "properties": {
               "active": false,
+              "direction": "horizontal",
               "key": "extras",
               "label": "Extras",
+              "mode": "grid",
               "permalink": "/shows/a-discovery-of-witches--1002207"
             },
             "children": [

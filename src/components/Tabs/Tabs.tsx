@@ -32,18 +32,7 @@ const Tabs: FC<any> = ({ ...props }): JSX.Element => {
           <summary className="font-labelPrimaryXL text-gray-500 cursor-pointer select-none">
             {item.properties.label}
           </summary>
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(360px,1fr))] gap-9">
-            <>
-              {item.children.map((item: ITabItemProps, index: number) => (
-                <div key={index}>{renderComponent(item, index)}</div>
-              ))}
-              {Array.from({ length: max - item.children.length }).map(
-                (_, index) => (
-                  <div key={index} />
-                )
-              )}
-            </>
-          </div>
+          {renderComponent(item, index, max)}
         </details>
       ))}
     </div>

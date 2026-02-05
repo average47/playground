@@ -1,3 +1,4 @@
+export { Container } from './Container';
 export { Card } from './Card';
 export { Carousel } from './Carousel';
 export { Grid } from './Grid';

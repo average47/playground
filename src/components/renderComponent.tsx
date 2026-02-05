@@ -1,25 +1,42 @@
 import { JSX } from 'react';
 import { HTMLComment } from '@/lib/src/htmlComment';
-import { Card, Carousel, Grid, Swimlane, Tabs, Thumbnails } from './index';
+import {
+  Card,
+  Carousel,
+  Container,
+  Grid,
+  List,
+  Swimlane,
+  Tabs,
+  Thumbnails,
+} from './index';
 
 type ComponentType =
+  | 'container'
   | 'card'
   | 'carousel'
   | 'grid'
+  | 'list'
   | 'swimlane'
   | 'tabs'
   | 'thumbnails';
 
 const typeToComponentMap: Record<ComponentType, React.ComponentType<any>> = {
+  container: Container,
   card: Card,
   carousel: Carousel,
   grid: Grid,
+  list: List,
   swimlane: Swimlane,
   tabs: Tabs,
   thumbnails: Thumbnails,
 };
 
-export function renderComponent(data: any, index: number): JSX.Element {
+export function renderComponent(
+  data: any,
+  index: number,
+  max?: number
+): JSX.Element {
   const name = data.type.toLowerCase() as ComponentType;
   const Component = typeToComponentMap[name];
   if (!Component) {
@@ -28,6 +45,9 @@ export function renderComponent(data: any, index: number): JSX.Element {
       key: index,
     });
   }
+  if ('properties' in data && max !== undefined) {
+    data.properties = { ...data.properties, maxItems: max };
+  }
   return (
     <Component
       key={index}
@@ -35,5 +55,3 @@ export function renderComponent(data: any, index: number): JSX.Element {
     />
   );
 }
-
-// list mode: Vertical, Swimlane:square|poster|network, Thumbnails || Grid || Carousel
