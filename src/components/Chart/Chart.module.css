@@ -1,0 +1,23 @@
+.chart {
+  width: 100%;
+  aspect-ratio: 1.5;
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+  row-gap: 10px;
+}
+.chartBar {
+  grid-row: sibling-index();
+  grid-column: span attr(data-value number);
+  border-radius: 1vw;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}

@@ -1,0 +1,97 @@
+import { FC, JSX } from 'react';
+import styles from './Chart.module.css';
+
+const Chart: FC<any> = ({ ...props }): JSX.Element => {
+  return (
+    <>
+      <ul
+        className={styles.chart}
+        tabIndex={0}
+        role="list"
+        aria-label="Chart Component">
+        <li
+          className={styles.chartBar}
+          data-value={10}
+          tabIndex={0}
+          role="img"
+          aria-label="10">
+          10%
+        </li>
+        <li
+          className={styles.chartBar}
+          data-value={20}
+          tabIndex={0}
+          role="img"
+          aria-label="20">
+          20%
+        </li>
+        <li
+          className={styles.chartBar}
+          data-value={30}
+          tabIndex={0}
+          role="img"
+          aria-label="30">
+          30%
+        </li>
+        <li
+          className={styles.chartBar}
+          data-value={40}
+          tabIndex={0}
+          role="img"
+          aria-label="40">
+          40%
+        </li>
+        <li
+          className={styles.chartBar}
+          data-value={50}
+          tabIndex={0}
+          role="img"
+          aria-label="50">
+          50%
+        </li>
+        <li
+          className={styles.chartBar}
+          data-value={60}
+          tabIndex={0}
+          role="img"
+          aria-label="60">
+          60%
+        </li>
+        <li
+          className={styles.chartBar}
+          data-value={70}
+          tabIndex={0}
+          role="img"
+          aria-label="70">
+          70%
+        </li>
+        <li
+          className={styles.chartBar}
+          data-value={80}
+          tabIndex={0}
+          role="img"
+          aria-label="80">
+          80%
+        </li>
+        <li
+          className={styles.chartBar}
+          data-value={90}
+          tabIndex={0}
+          role="img"
+          aria-label="90">
+          90%
+        </li>
+        <li
+          className={styles.chartBar}
+          data-value={100}
+          tabIndex={0}
+          role="img"
+          aria-label="100">
+          100%
+        </li>
+      </ul>
+    </>
+  );
+};
+
+export default Chart;

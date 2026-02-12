@@ -2,6 +2,8 @@
 @import url('./amcplus/theme.css');
 @import 'tailwindcss';
 
+@layer normalize, base, utilities;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -13,17 +15,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
@@ -56,4 +47,30 @@ body {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1.25rem;
+}
+
+@layer base {
+  body {
+    background: #000;
+    min-height: 100vh;
+  }
+
+  body::before {
+    --size: 45px;
+    --line: #555555b3;
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background:
+      linear-gradient(90deg, var(--line) 2px, transparent 1px var(--size)) 50%
+        50% / var(--size) var(--size),
+      linear-gradient(var(--line) 2px, transparent 1px var(--size)) 50% 50% /
+        var(--size) var(--size);
+    mask: linear-gradient(-20deg, transparent 50%, white);
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+  }
 }

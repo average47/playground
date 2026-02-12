@@ -2,33 +2,33 @@ import { JSX } from 'react';
 import { HTMLComment } from '@/lib/src/htmlComment';
 import {
   Card,
-  Carousel,
-  Container,
-  Grid,
-  List,
-  Swimlane,
-  Tabs,
+  // Carousel,
+  // Container,
+  // Grid,
+  // List,
+  // Swimlane,
+  // Tabs,
   Thumbnails,
 } from './index';
 
 type ComponentType =
-  | 'container'
+  // | 'container'
   | 'card'
-  | 'carousel'
-  | 'grid'
-  | 'list'
-  | 'swimlane'
-  | 'tabs'
+  // | 'carousel'
+  // | 'grid'
+  // | 'list'
+  // | 'swimlane'
+  // | 'tabs'
   | 'thumbnails';
 
 const typeToComponentMap: Record<ComponentType, React.ComponentType<any>> = {
-  container: Container,
+  // container: Container,
   card: Card,
-  carousel: Carousel,
-  grid: Grid,
-  list: List,
-  swimlane: Swimlane,
-  tabs: Tabs,
+  // carousel: Carousel,
+  // grid: Grid,
+  // list: List,
+  // swimlane: Swimlane,
+  // tabs: Tabs,
   thumbnails: Thumbnails,
 };
 

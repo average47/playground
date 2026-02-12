@@ -1,6 +1,7 @@
 export { Container } from './Container';
 export { Card } from './Card';
 export { Carousel } from './Carousel';
+export { Chart } from './Chart';
 export { Grid } from './Grid';
 export { Icon } from './Icon';
 export { List } from './List';
