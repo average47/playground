@@ -1,6 +1,6 @@
 export { Container } from './Container';
 export { Card } from './Card';
-export { Carousel } from './Carousel';
+export { Carousel, VerticalCarousel } from './Carousel';
 // export { Carousel } from './Carousel2';
 export { Chart } from './Chart';
 export { Grid } from './Grid';
@@ -10,3 +10,4 @@ export { Progress } from './Progress';
 export { Swimlane } from './Swimlane';
 export { Tabs } from './Tabs';
 export { Thumbnails } from './Thumbnails';
+export { Example } from './Test';

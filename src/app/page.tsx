@@ -1,4 +1,5 @@
-import { Carousel } from '@/components';
+import { Example } from '@/components';
+
 export default async function Page({
   params,
 }: {
@@ -6,7 +7,7 @@ export default async function Page({
 }) {
   return (
     <main className="mx-auto space-y-8">
-      <Carousel />
+      <Example />
     </main>
   );
 }

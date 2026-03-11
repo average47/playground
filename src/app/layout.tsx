@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${rubik.variable} ${montserrat.variable} antialiased bg-black text-white m-16`}>
+        className={`${rubik.variable} ${montserrat.variable} antialiased bg-black text-white`}>
         {children}
       </body>
     </html>
